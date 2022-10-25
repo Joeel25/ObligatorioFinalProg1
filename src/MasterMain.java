@@ -31,7 +31,7 @@ public class MasterMain {
 
 		int NumAzar = 1 + azar.nextInt(4);
 		int ingreso; // El numero ingresado por teclado
-		int[] descifrador = new int[4]; // El número transformado en array
+		int[] descifrador = new int[4]; // El nï¿½mero transformado en array
 		int[] codificador = new int[4]; // El array a descifrar (generado al azar)
 		int verde = 0, rojo = 0; // Contadores
 
@@ -60,6 +60,7 @@ public class MasterMain {
 			}
 		}
 		/* Comentario Prueba */
+		/* Segundo comentario de prueba */
 		System.out.println("Numeros verdes total es: " + verde);
 		System.out.println("Numeros rojos total es: " + rojo);
 	}
