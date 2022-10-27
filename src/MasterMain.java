@@ -34,6 +34,7 @@ public class MasterMain {
 		int[] descifrador = new int[4]; // El n�mero transformado en array
 		int[] codificador = new int[4]; // El array a descifrar (generado al azar)
 		int verde = 0, rojo = 0; // Contadores
+		int contador = 0; // Para calcular la cantidad de intentos
 
 		for (int i = 0; i < 4; i++) {
 
@@ -49,6 +50,7 @@ public class MasterMain {
 		System.out.print("Ingrese un numero: ");
 		ingreso = dato.nextInt();
 		descifrador = transforma(ingreso);
+		contador = contador + 1;
 
 		for (int i = 0; i < 4; i++) {
 			if (encontre(codificador, descifrador[i])) {
@@ -59,10 +61,8 @@ public class MasterMain {
 				System.out.println("Rojo: " + descifrador[i]);
 			}
 		}
-		/* Comentario Prueba */
-		/* Segundo comentario de prueba */
-		// Tercer comentario de prueba 
 		System.out.println("Numeros verdes total es: " + verde);
 		System.out.println("Numeros rojos total es: " + rojo);
+		System.out.println("Cantidad de intentos total es: " + contador);
 	}
 }
