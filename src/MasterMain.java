@@ -65,5 +65,6 @@ public class MasterMain {
 		System.out.println("Numeros rojos total es: " + rojo);
 		System.out.println("Cantidad de intentos total es: " + contador);
 		System.out.println("Hola");
+		System.out.println("Hola");
 	}
 }
